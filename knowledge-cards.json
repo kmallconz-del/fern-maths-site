@@ -1,0 +1,392 @@
+[
+  {
+    "lessonId": "L3F01",
+    "kpId": "FRAC.NUMBER_LINE.PROPER",
+    "title_en": "Find a fraction on a line",
+    "question_en": "How can a fraction name a place between 0 and 1?",
+    "idea_en": "The denominator counts equal spaces in one whole; the numerator counts spaces from 0.",
+    "steps_en": [
+      "Find the whole stretch from 0 to 1.",
+      "Count its equal spaces to find the denominator.",
+      "Count spaces from 0 to the point to find the numerator."
+    ],
+    "example_en": {
+      "itemId": "L3F01-I02",
+      "diagram_field": "diagram_svg",
+      "prompt": "What fraction is at point P?",
+      "steps": [
+        "The whole has 5 equal spaces.",
+        "Point P is 3 spaces from 0.",
+        "That is 3 out of 5 equal spaces: 3/5."
+      ],
+      "answer": "3/5"
+    },
+    "remember_en": "Count the spaces, not the tick marks. Starting at 0 is not a step.",
+    "connects_from": [
+      {
+        "kpId": "FRAC.EQUAL_PARTS",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Wholes and equal parts"
+      }
+    ],
+    "connects_to": [
+      {
+        "kpId": "PROB.LIKELIHOOD.SCALE",
+        "relation": "suggested",
+        "source_kind": "connects_to",
+        "label_en": "Place likelihood on a zero-to-one scale"
+      }
+    ]
+  },
+  {
+    "lessonId": "L3F02",
+    "kpId": "FRAC.COMPARE.SAME_DENOM",
+    "title_en": "Which fraction is greater?",
+    "question_en": "How do I compare fractions with the same denominator?",
+    "idea_en": "For the same-sized whole, more parts of the same size make a greater fraction.",
+    "steps_en": [
+      "Check that the wholes match and the denominators are the same.",
+      "Compare the numerators: they count the parts.",
+      "Choose <, > or = to show the relationship."
+    ],
+    "example_en": {
+      "itemId": "L3F02-I02",
+      "diagram_field": "diagram_svg",
+      "prompt": "Compare 3/8 and 5/8: 3/8 __ 5/8.",
+      "steps": [
+        "Both fractions count parts of a whole split into 8 equal spaces.",
+        "5/8 is further to the right on this line.",
+        "3/8 < 5/8."
+      ],
+      "answer": "<"
+    },
+    "remember_en": "Compare the same-sized whole. The open side of < or > faces the greater amount.",
+    "connects_from": [
+      {
+        "kpId": "FRAC.EQUAL_PARTS",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Wholes and equal parts"
+      }
+    ],
+    "connects_to": [
+      {
+        "kpId": "FRAC.COMPARE.RELATED_DENOM",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Compare fractions with related denominators"
+      },
+      {
+        "kpId": "FRAC.ADD.SAME_DENOM",
+        "relation": "suggested",
+        "source_kind": "teaching_connection",
+        "label_en": "Join same-sized parts"
+      }
+    ]
+  },
+  {
+    "lessonId": "L3F03",
+    "kpId": "FRAC.ADD.SAME_DENOM",
+    "title_en": "Join same-sized parts",
+    "question_en": "Why does the denominator stay the same when I add these fractions?",
+    "idea_en": "We join the counts of equal-sized parts, while the size of each part stays the same.",
+    "steps_en": [
+      "Use the same whole and check that the denominators match.",
+      "Add the numerators to count all the parts.",
+      "Keep the denominator because each part is still the same size."
+    ],
+    "example_en": {
+      "itemId": "L3F03-I02",
+      "diagram_field": "solution_svg",
+      "prompt": "Find 2/8 + 3/8.",
+      "steps": [
+        "The whole is split into 8 equal parts.",
+        "Join 2 parts and 3 more parts: 2 + 3 = 5 parts.",
+        "The parts are still eighths, so the sum is 5/8."
+      ],
+      "answer": "5/8"
+    },
+    "remember_en": "Adding parts does not cut each part into smaller pieces.",
+    "connects_from": [
+      {
+        "kpId": "FRAC.EQUAL_PARTS",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Wholes and equal parts"
+      },
+      {
+        "kpId": "ADD.MEANING",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Joining parts"
+      },
+      {
+        "kpId": "FRAC.COMPARE.SAME_DENOM",
+        "relation": "suggested",
+        "source_kind": "teaching_connection",
+        "label_en": "Which fraction is greater?"
+      }
+    ],
+    "connects_to": [
+      {
+        "kpId": "FRAC.ADD.RELATED_DENOM",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Add fractions with related denominators"
+      },
+      {
+        "kpId": "FRAC.SUB.SAME_DENOM",
+        "relation": "suggested",
+        "source_kind": "teaching_connection",
+        "label_en": "Find the parts left"
+      }
+    ]
+  },
+  {
+    "lessonId": "L3F04",
+    "kpId": "FRAC.SUB.SAME_DENOM",
+    "title_en": "Find the parts left",
+    "question_en": "How do I subtract fractions without changing the whole?",
+    "idea_en": "Take away a count of equal-sized parts, but keep the original whole as your unit.",
+    "steps_en": [
+      "Start with the first number of equal parts.",
+      "Take away the second number of parts.",
+      "Keep the denominator: the original part size has not changed."
+    ],
+    "example_en": {
+      "itemId": "L3F04-I02",
+      "diagram_field": "solution_svg",
+      "prompt": "Find 7/10 - 3/10.",
+      "steps": [
+        "Start with 7 tenths of the original whole.",
+        "Take away 3 tenths: 7 - 3 = 4 tenths remain.",
+        "The remaining fraction is 4/10."
+      ],
+      "answer": "4/10"
+    },
+    "remember_en": "The pieces left are not a new whole. Keep the original whole in mind.",
+    "connects_from": [
+      {
+        "kpId": "FRAC.EQUAL_PARTS",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Wholes and equal parts"
+      },
+      {
+        "kpId": "SUB.MEANING",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Differences and what remains"
+      },
+      {
+        "kpId": "FRAC.ADD.SAME_DENOM",
+        "relation": "suggested",
+        "source_kind": "teaching_connection",
+        "label_en": "Join same-sized parts"
+      }
+    ],
+    "connects_to": [
+      {
+        "kpId": "FRAC.SUB.RELATED_DENOM",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Subtract fractions with related denominators"
+      }
+    ]
+  },
+  {
+    "lessonId": "L4F01",
+    "kpId": "FRAC.UNIT_OF_WHOLE",
+    "title_en": "Find one equal group",
+    "question_en": "What does one sixth of an amount mean?",
+    "idea_en": "The denominator tells us how many equal groups make the whole; one sixth is one of six groups.",
+    "steps_en": [
+      "Find the whole amount.",
+      "Use the denominator to decide how many equal groups to make.",
+      "Share the whole equally, then take one group."
+    ],
+    "example_en": {
+      "itemId": "L5F01-E1",
+      "diagram_field": "solution_svg",
+      "prompt": "What is 1/6 of 42 counters?",
+      "steps": [
+        "The 6 in 1/6 means 6 equal groups, not 6 counters per group.",
+        "Share the whole: 42 ÷ 6 = 7 counters in each group.",
+        "Take one group. Check: 7 × 6 = 42."
+      ],
+      "answer": "7 counters"
+    },
+    "remember_en": "Multiply the amount in one group by the denominator. You should get the whole amount back.",
+    "connects_from": [
+      {
+        "kpId": "FRAC.EQUAL_PARTS",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Wholes and equal parts"
+      },
+      {
+        "kpId": "DIV.MEANING",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "What division finds"
+      }
+    ],
+    "connects_to": [
+      {
+        "kpId": "FRAC.NONUNIT_OF_WHOLE",
+        "relation": "suggested",
+        "source_kind": "teaching_connection",
+        "label_en": "From one part to several"
+      }
+    ]
+  },
+  {
+    "lessonId": "L4F02",
+    "kpId": "FRAC.WHOLE_FROM_UNIT",
+    "title_en": "Build the whole from one part",
+    "question_en": "How can one known equal part help me find the whole?",
+    "idea_en": "Repeat the known part as many times as the denominator says to build the whole.",
+    "steps_en": [
+      "Find the amount in one equal part.",
+      "Read the denominator to find how many parts make the whole.",
+      "Multiply one part by the number of equal parts."
+    ],
+    "example_en": {
+      "itemId": "L4F02-W1",
+      "diagram_field": "solution_svg",
+      "prompt": "1/6 of a ribbon is 7 cm. How long is the whole ribbon?",
+      "steps": [
+        "The 7 cm labels one part, not the whole ribbon.",
+        "Build 6 equal parts: 7 × 6 = 42 cm.",
+        "Check one part again: 42 ÷ 6 = 7 cm."
+      ],
+      "answer": "42 cm"
+    },
+    "remember_en": "Ask whether the known amount is one part or the whole before choosing an operation.",
+    "connects_from": [
+      {
+        "kpId": "FRAC.EQUAL_PARTS",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Wholes and equal parts"
+      },
+      {
+        "kpId": "MULT.EQUAL_GROUPS",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Equal groups and multiplication"
+      }
+    ],
+    "connects_to": [
+      {
+        "kpId": "FRAC.WHOLE_FROM_NONUNIT",
+        "relation": "suggested",
+        "source_kind": "suggested_next",
+        "label_en": "Find the whole from a non-unit fraction"
+      }
+    ]
+  },
+  {
+    "lessonId": "L5F01",
+    "kpId": "FRAC.NONUNIT_OF_WHOLE",
+    "title_en": "From one part to several",
+    "question_en": "How do I find several equal parts of an amount?",
+    "idea_en": "Find one equal part first, then combine as many parts as the numerator asks for.",
+    "steps_en": [
+      "Use the denominator to split the whole into equal parts.",
+      "Divide the whole by the denominator to find one part.",
+      "Multiply one part by the numerator to find the parts you want."
+    ],
+    "example_en": {
+      "itemId": "L5F01-W1",
+      "diagram_field": "solution_svg",
+      "prompt": "3/5 of 30 marbles are blue. How many are blue?",
+      "steps": [
+        "Split 30 marbles into 5 equal parts: 30 ÷ 5 = 6 per part.",
+        "The numerator asks for 3 parts: 6 × 3 = 18.",
+        "The highlighted 3 parts contain 18 blue marbles."
+      ],
+      "answer": "18 blue marbles"
+    },
+    "remember_en": "The bottom number splits the whole. The top number chooses how many parts.",
+    "connects_from": [
+      {
+        "kpId": "FRAC.EQUAL_PARTS",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Wholes and equal parts"
+      },
+      {
+        "kpId": "DIV.MEANING",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "What division finds"
+      },
+      {
+        "kpId": "MULT.EQUAL_GROUPS",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Equal groups and multiplication"
+      },
+      {
+        "kpId": "FRAC.UNIT_OF_WHOLE",
+        "relation": "suggested",
+        "source_kind": "teaching_connection",
+        "label_en": "Find one equal group"
+      }
+    ],
+    "connects_to": []
+  },
+  {
+    "lessonId": "L5F02",
+    "kpId": "FRAC.WHOLE_FROM_NONUNIT",
+    "title_en": "Build the whole from several parts",
+    "question_en": "How do I find the whole when I know the amount in several parts?",
+    "idea_en": "The known amount covers several equal parts; find one part before rebuilding the whole.",
+    "steps_en": [
+      "The numerator tells you how many parts have a known total.",
+      "Divide that known total by the numerator to find one part.",
+      "Multiply one part by the denominator to build the whole."
+    ],
+    "example_en": {
+      "itemId": "L5F02-W1",
+      "diagram_field": "solution_svg",
+      "prompt": "3/5 of a ribbon is 18 cm. How long is the whole ribbon?",
+      "steps": [
+        "The 18 cm covers 3 parts together, not one part.",
+        "Find one part: 18 ÷ 3 = 6 cm.",
+        "Build all 5 parts: 6 × 5 = 30 cm."
+      ],
+      "answer": "30 cm"
+    },
+    "remember_en": "Label what you know first: the whole, one part, or several parts.",
+    "connects_from": [
+      {
+        "kpId": "FRAC.EQUAL_PARTS",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Wholes and equal parts"
+      },
+      {
+        "kpId": "DIV.MEANING",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "What division finds"
+      },
+      {
+        "kpId": "MULT.EQUAL_GROUPS",
+        "relation": "required",
+        "source_kind": "requires",
+        "label_en": "Equal groups and multiplication"
+      },
+      {
+        "kpId": "FRAC.WHOLE_FROM_UNIT",
+        "relation": "suggested",
+        "source_kind": "suggested_next",
+        "label_en": "Find the whole from a unit fraction"
+      }
+    ],
+    "connects_to": []
+  }
+]

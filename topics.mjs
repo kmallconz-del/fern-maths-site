@@ -1,0 +1,117 @@
+// Topics: the year pages group the 222 curriculum lessons into 95 topics so a child sees a short list.
+// A topic is only a grouping for the pages. Every lesson keeps its ID, pictures, animation, practice and
+// records; a topic's lessons are its steps, in teaching order. (2026-11-05, a parent decision: group, don't cut.)
+const T = (id, year, domain, title_en, title_zh, steps) => ({ id, year, domain, title_en, title_zh, lessonIds: steps.map(s => `Y${year}-${s}`) });
+export const TOPICS = Object.freeze([
+  // Year 3: 40 lessons → 15 topics
+  T('Y3-T01', 3, 'Number', 'Numbers to 1000', '1000 以内的数：读写、分组、比较', ['N01', 'N02', 'N03']),
+  T('Y3-T02', 3, 'Number', 'Round and estimate', '取整与估算', ['N04', 'N05']),
+  T('Y3-T03', 3, 'Number', 'Counting patterns', '数数规律', ['N06', 'N07', 'A02']),
+  T('Y3-T04', 3, 'Number', 'Add and subtract', '加减法', ['N08', 'N09', 'N10', 'N11']),
+  T('Y3-T05', 3, 'Number', 'Multiply and divide', '乘除法', ['N12', 'N13', 'N14']),
+  T('Y3-T06', 3, 'Number', 'Fractions: equal parts', '分数：认识与比较', ['N15', 'N16', 'N17', 'N18']),
+  T('Y3-T07', 3, 'Number', 'Fractions: add, subtract, share', '分数：加减与求量', ['N19', 'N20', 'N21']),
+  T('Y3-T08', 3, 'Number', 'Money', '钱', ['N22', 'N23']),
+  T('Y3-T09', 3, 'Algebra', 'Equal or not', '等式', ['A01']),
+  T('Y3-T10', 3, 'Measurement', 'Length, mass and capacity', '长度、质量、容量', ['M01', 'M02']),
+  T('Y3-T11', 3, 'Measurement', 'Around and inside a shape', '周长与面积', ['M03', 'M04']),
+  T('Y3-T12', 3, 'Geometry', 'Shapes, turns and mirrors', '图形、转动与对称', ['G01', 'M05', 'G02']),
+  T('Y3-T13', 3, 'Measurement', 'Time', '时间', ['M06', 'M07', 'M08']),
+  T('Y3-T14', 3, 'Geometry', 'Directions and maps', '方位与地图', ['G03', 'G04']),
+  T('Y3-T15', 3, 'Statistics', 'Data', '统计', ['S01', 'S02', 'S03']),
+  // Year 4: 40 lessons → 16 topics
+  T('Y4-T01', 4, 'Number', 'Place value and rounding', '位值与取整', ['N01', 'N02']),
+  T('Y4-T02', 4, 'Number', 'Counting and patterns', '数数与规律', ['N03', 'A03']),
+  T('Y4-T03', 4, 'Number', 'Add and subtract', '加减法', ['N04', 'N05', 'A01']),
+  T('Y4-T04', 4, 'Number', 'Multiply and divide', '乘除法', ['N06', 'N07', 'N08', 'A02']),
+  T('Y4-T05', 4, 'Number', 'Fractions', '分数', ['N10', 'N11', 'N12', 'N13']),
+  T('Y4-T06', 4, 'Number', 'Decimals: tenths', '十分位小数', ['N09', 'N14']),
+  T('Y4-T07', 4, 'Number', 'Parts of amounts and scaling', '求量与倍数', ['N15', 'N16', 'N17']),
+  T('Y4-T08', 4, 'Number', 'Money', '钱', ['N18', 'N19']),
+  T('Y4-T09', 4, 'Measurement', 'Tools, units and temperature', '测量工具、单位与温度', ['M01', 'M02']),
+  T('Y4-T10', 4, 'Measurement', 'Perimeter and area', '周长与面积', ['M03', 'M04', 'M05']),
+  T('Y4-T11', 4, 'Measurement', 'Solids and volume', '立体与体积', ['M06', 'G03']),
+  T('Y4-T12', 4, 'Measurement', 'Angles and turns', '角与转动', ['M07', 'G04']),
+  T('Y4-T13', 4, 'Measurement', 'Time', '时间', ['M08', 'M09']),
+  T('Y4-T14', 4, 'Geometry', 'Polygons and symmetry', '多边形与对称', ['G01', 'G02']),
+  T('Y4-T15', 4, 'Geometry', 'Maps', '地图', ['G05']),
+  T('Y4-T16', 4, 'Statistics', 'Data', '统计', ['S01', 'S02', 'S03', 'S04']),
+  // Year 5: 33 lessons → 15 topics
+  T('Y5-T01', 5, 'Number', 'Big numbers and rounding', '大数与取整', ['N01', 'N02', 'N03']),
+  T('Y5-T02', 5, 'Number', 'Add and subtract', '加减法', ['N04']),
+  T('Y5-T03', 5, 'Number', 'Multiply and divide', '乘除法', ['N05', 'N06', 'N07', 'N09']),
+  T('Y5-T04', 5, 'Number', 'Fractions', '分数', ['N10', 'N11', 'N13']),
+  T('Y5-T05', 5, 'Number', 'Decimals and percentages', '小数与百分数', ['N08', 'N12', 'N14']),
+  T('Y5-T06', 5, 'Number', 'Money', '钱', ['N15']),
+  T('Y5-T07', 5, 'Algebra', 'Equations and rules', '等式与规律', ['A01', 'A02']),
+  T('Y5-T08', 5, 'Measurement', 'Measuring and length', '测量与长度', ['M01', 'M02']),
+  T('Y5-T09', 5, 'Measurement', 'Area and perimeter', '面积与周长', ['M03', 'M04']),
+  T('Y5-T10', 5, 'Measurement', 'Volume and prisms', '体积与棱柱', ['M05', 'G02']),
+  T('Y5-T11', 5, 'Measurement', 'Angles and lines', '角、平行与垂直', ['M06', 'G01']),
+  T('Y5-T12', 5, 'Measurement', 'Time', '时间', ['M07']),
+  T('Y5-T13', 5, 'Geometry', 'Moves and maps', '变换与地图', ['G03', 'G04']),
+  T('Y5-T14', 5, 'Probability', 'Chance', '可能性', ['P01', 'P02']),
+  T('Y5-T15', 5, 'Statistics', 'Data', '统计', ['S01', 'S02', 'S03']),
+  // Year 6: 38 lessons → 18 topics
+  T('Y6-T01', 6, 'Number', 'Place value and rounding', '位值与取整', ['N01', 'N04']),
+  T('Y6-T02', 6, 'Number', 'Factors, squares and cubes', '因数、平方与立方', ['N02', 'N03']),
+  T('Y6-T03', 6, 'Number', 'Negative numbers and order of operations', '负数与运算顺序', ['N05', 'N06']),
+  T('Y6-T04', 6, 'Number', 'Add, subtract, multiply, divide', '四则运算', ['N07', 'N08', 'N09']),
+  T('Y6-T05', 6, 'Number', 'Decimals', '小数', ['N10', 'N14']),
+  T('Y6-T06', 6, 'Number', 'Fractions', '分数', ['N11', 'N13', 'N15']),
+  T('Y6-T07', 6, 'Number', 'Fractions, decimals and percentages', '分数、小数与百分数', ['N12', 'N16']),
+  T('Y6-T08', 6, 'Number', 'Money', '钱', ['N17']),
+  T('Y6-T09', 6, 'Algebra', 'Rules, inequalities and coordinates', '规律、不等式与坐标', ['A01', 'A02', 'A03']),
+  T('Y6-T10', 6, 'Geometry', 'Shapes and solids', '平面图形与立体', ['G01', 'G02']),
+  T('Y6-T11', 6, 'Geometry', 'Symmetry, tiling and moves', '对称、镶嵌与变换', ['G03', 'G04', 'G05']),
+  T('Y6-T12', 6, 'Geometry', 'Maps', '地图', ['G06']),
+  T('Y6-T13', 6, 'Measurement', 'Units and measuring', '单位与测量', ['M01', 'M02']),
+  T('Y6-T14', 6, 'Measurement', 'Area and volume', '面积与体积', ['M03', 'M04']),
+  T('Y6-T15', 6, 'Measurement', 'Angles', '角', ['M05']),
+  T('Y6-T16', 6, 'Measurement', 'Time', '时间', ['M06']),
+  T('Y6-T17', 6, 'Probability', 'Chance', '概率', ['P01', 'P02', 'P03']),
+  T('Y6-T18', 6, 'Statistics', 'Data', '统计', ['S01', 'S02', 'S03']),
+  // Year 7: 37 lessons → 16 topics
+  T('Y7-T01', 7, 'Number', 'Powers, primes and factors', '幂、质数与因数', ['N01', 'N02', 'N03']),
+  T('Y7-T02', 7, 'Number', 'Integers', '整数与数轴', ['N04']),
+  T('Y7-T03', 7, 'Number', 'Calculate and estimate', '计算与估算', ['N05', 'N06']),
+  T('Y7-T04', 7, 'Number', 'Fractions', '分数', ['N07', 'N08', 'N09']),
+  T('Y7-T05', 7, 'Number', 'Decimals and percentages', '小数与百分数', ['N10', 'N11']),
+  T('Y7-T06', 7, 'Number', 'Money', '钱', ['N12']),
+  T('Y7-T07', 7, 'Algebra', 'Algebra', '代数', ['A01', 'A02', 'A04']),
+  T('Y7-T08', 7, 'Geometry', 'Coordinates and moves', '坐标与变换', ['A03', 'G03', 'G05']),
+  T('Y7-T09', 7, 'Geometry', 'Triangles and angles', '三角形与角', ['G01', 'G02']),
+  T('Y7-T10', 7, 'Geometry', 'Solids and nets', '立体与展开图', ['G04']),
+  T('Y7-T11', 7, 'Measurement', 'Units, perimeter and area', '单位、周长与面积', ['M01', 'M02', 'M03']),
+  T('Y7-T12', 7, 'Measurement', 'Volume', '体积', ['M04']),
+  T('Y7-T13', 7, 'Measurement', 'Time', '时间', ['M05']),
+  T('Y7-T14', 7, 'Probability', 'Chance', '概率', ['P01', 'P02', 'P03', 'P04']),
+  T('Y7-T15', 7, 'Statistics', 'Collect and summarise data', '收集与概括数据', ['S01', 'S02', 'S03']),
+  T('Y7-T16', 7, 'Statistics', 'Graphs and conclusions', '图表与结论', ['S04', 'S05', 'S06', 'S07']),
+  // Year 8: 34 lessons → 15 topics
+  T('Y8-T01', 8, 'Number', 'Powers, primes and roots', '幂、质数与方根', ['N01', 'N02']),
+  T('Y8-T02', 8, 'Number', 'Signed numbers and calculation', '有符号数与计算', ['N03', 'N04', 'N05']),
+  T('Y8-T03', 8, 'Number', 'Fractions, decimals and percentages', '分数、小数与百分数', ['N06', 'N07', 'N08', 'N09']),
+  T('Y8-T04', 8, 'Number', 'Ratio', '比', ['N10']),
+  T('Y8-T05', 8, 'Number', 'Money', '钱', ['N11', 'N12']),
+  T('Y8-T06', 8, 'Algebra', 'Equations and inequalities', '方程与不等式', ['A01', 'A02']),
+  T('Y8-T07', 8, 'Algebra', 'Expressions and formulas', '代数式与公式', ['A03', 'A04']),
+  T('Y8-T08', 8, 'Algebra', 'Coordinates and patterns', '坐标与规律', ['A05', 'A06']),
+  T('Y8-T09', 8, 'Geometry', 'Circles and polygons', '圆与多边形', ['G01', 'G02']),
+  T('Y8-T10', 8, 'Geometry', 'Moves and maps', '变换与地图', ['G03', 'G04']),
+  T('Y8-T11', 8, 'Measurement', 'Units and area', '单位与面积', ['M01', 'M02', 'M03']),
+  T('Y8-T12', 8, 'Measurement', 'Prisms and volume', '棱柱与体积', ['M04']),
+  T('Y8-T13', 8, 'Measurement', 'Time', '时间', ['M05']),
+  T('Y8-T14', 8, 'Probability', 'Chance', '概率', ['P01', 'P02']),
+  T('Y8-T15', 8, 'Statistics', 'Data', '统计', ['S01', 'S02', 'S03', 'S04', 'S05']),
+]);
+
+const byLesson = new Map();
+for (const topic of TOPICS) for (const id of topic.lessonIds) byLesson.set(id, topic);
+export const topicOf = lessonId => byLesson.get(lessonId) || null;
+export const topicsForYear = year => TOPICS.filter(t => t.year === year);
+// Where a lesson sits in its topic: { topic, index (0-based), count }.
+export function stepOf(lessonId) {
+  const topic = topicOf(lessonId);
+  return topic ? { topic, index: topic.lessonIds.indexOf(lessonId), count: topic.lessonIds.length } : null;
+}

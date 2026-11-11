@@ -1,0 +1,394 @@
+[
+  {
+    "lessonId": "L3F01",
+    "age": 6,
+    "frames": [
+      {
+        "id": "L3F01-1",
+        "title": "One whole ribbon",
+        "caption": "This ribbon is one whole, from start to finish.",
+        "alt": "One uncut ribbon. Its left end is zero and its right end is one.",
+        "image": "visual/L3F01-1.svg"
+      },
+      {
+        "id": "L3F01-2",
+        "title": "Make equal parts",
+        "caption": "Make 5 equal parts. Colour 3 parts from the start.",
+        "alt": "The same ribbon is divided into 5 equal parts. The first 3 are teal.",
+        "image": "visual/L3F01-2.svg"
+      },
+      {
+        "id": "L3F01-3",
+        "title": "Meet the fraction",
+        "caption": "3/5 is 3 equal steps from zero.",
+        "alt": "A ribbon with 3 of 5 equal parts coloured aligns with a number line. Point P is 3/5 of the distance from zero to one.",
+        "image": "visual/L3F01-3.svg"
+      }
+    ],
+    "try_it": {
+      "prompt": "How many equal parts make one whole?",
+      "options": [
+        {
+          "id": "top",
+          "label": "3 equal parts"
+        },
+        {
+          "id": "bottom",
+          "label": "5 equal parts"
+        }
+      ],
+      "correctId": "bottom",
+      "feedback_en": "Yes. All 5 equal parts make one whole.",
+      "explain_en": "Count every space, including the white spaces. There are 5 equal parts in the whole.",
+      "image": "visual/L3F01-3.svg",
+      "alt": "A ribbon with 3 of 5 equal parts coloured aligns with a number line. Point P is 3/5 of the distance from zero to one."
+    },
+    "exampleItemId": "L3F01-I02"
+  },
+  {
+    "lessonId": "L3F02",
+    "age": 6,
+    "frames": [
+      {
+        "id": "L3F02-1",
+        "title": "Same-sized wholes",
+        "caption": "Start with two ribbons of the same length.",
+        "alt": "Ribbons A and B have exactly the same length and width. Neither is cut.",
+        "image": "visual/L3F02-1.svg"
+      },
+      {
+        "id": "L3F02-2",
+        "title": "Compare equal parts",
+        "caption": "Each ribbon has 8 equal parts. Compare the coloured parts.",
+        "alt": "Both ribbons have 8 equal parts. Ribbon A has 3 teal parts; ribbon B has 5 yellow parts.",
+        "image": "visual/L3F02-2.svg"
+      },
+      {
+        "id": "L3F02-3",
+        "title": "Write the comparison",
+        "caption": "5/8 covers more ribbon than 3/8.",
+        "alt": "The same equal-sized ribbons show 3/8 and 5/8. The relationship below is 3/8 < 5/8.",
+        "image": "visual/L3F02-3.svg"
+      }
+    ],
+    "try_it": {
+      "prompt": "Which ribbon has more coloured ribbon?",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ribbon A"
+        },
+        {
+          "id": "b",
+          "label": "Ribbon B"
+        }
+      ],
+      "correctId": "a",
+      "feedback_en": "Ribbon A has more coloured parts of the same size.",
+      "explain_en": "Both wholes match. Compare coloured parts, not the colours.",
+      "image": "visual/L3F02-try.svg",
+      "alt": "Two equal-sized ribbons each have four equal parts. Ribbon A has three coloured parts. Ribbon B has two coloured parts."
+    },
+    "exampleItemId": "L3F02-I02"
+  },
+  {
+    "lessonId": "L3F03",
+    "age": 6,
+    "frames": [
+      {
+        "id": "L3F03-1",
+        "title": "One whole strip",
+        "caption": "This paper strip is one whole.",
+        "alt": "One uncut white paper strip. A bracket spans the entire strip.",
+        "image": "visual/L3F03-1.svg"
+      },
+      {
+        "id": "L3F03-2",
+        "title": "Join equal parts",
+        "caption": "Colour 2 parts, then 3 more. Each part is still one eighth.",
+        "alt": "The same strip has 8 equal parts. 2 are teal, the next 3 yellow, and 3 white. Every part is labelled 1/8.",
+        "image": "visual/L3F03-2.svg"
+      },
+      {
+        "id": "L3F03-3",
+        "title": "Count the eighths",
+        "caption": "2 eighths and 3 more eighths make 5 eighths.",
+        "alt": "The unchanged 8-part strip has 2 teal parts and 3 yellow parts. Below: 2/8 plus 3/8 equals 5/8.",
+        "image": "visual/L3F03-3.svg"
+      }
+    ],
+    "try_it": {
+      "prompt": "We colour more parts. Does each part change size?",
+      "options": [
+        {
+          "id": "same",
+          "label": "Same size"
+        },
+        {
+          "id": "smaller",
+          "label": "Gets smaller"
+        },
+        {
+          "id": "bigger",
+          "label": "Gets bigger"
+        }
+      ],
+      "correctId": "same",
+      "feedback_en": "Each part stays the same size.",
+      "explain_en": "Colouring more parts changes how many we use. It does not cut the parts.",
+      "image": "visual/L3F03-3.svg",
+      "alt": "The unchanged 8-part strip has 2 teal parts and 3 yellow parts. Below: 2/8 plus 3/8 equals 5/8."
+    },
+    "exampleItemId": "L3F03-I02"
+  },
+  {
+    "lessonId": "L3F04",
+    "age": 6,
+    "frames": [
+      {
+        "id": "L3F04-1",
+        "title": "Keep the whole",
+        "caption": "This full paper strip is our original whole.",
+        "alt": "One uncut white paper strip. A bracket spans the full original length.",
+        "image": "visual/L3F04-1.svg"
+      },
+      {
+        "id": "L3F04-2",
+        "title": "Take some parts away",
+        "caption": "Start with 7 shaded parts. Cross out 3. Keep all 10 spaces.",
+        "alt": "The original strip has 10 equal spaces. 7 are teal. Red crosses mark the last 3 teal spaces. The other 3 spaces stay white.",
+        "image": "visual/L3F04-2.svg"
+      },
+      {
+        "id": "L3F04-3",
+        "title": "Count the tenths left",
+        "caption": "4 tenths remain. The original whole still has 10 equal parts.",
+        "alt": "All 10 original spaces remain visible. 4 teal parts are uncrossed; 3 teal parts are crossed out. Below: 7/10 minus 3/10 equals 4/10.",
+        "image": "visual/L3F04-3.svg"
+      }
+    ],
+    "try_it": {
+      "prompt": "After taking parts away, what is our whole?",
+      "options": [
+        {
+          "id": "left",
+          "label": "Only parts left"
+        },
+        {
+          "id": "original",
+          "label": "The original strip"
+        },
+        {
+          "id": "crossed",
+          "label": "Only crossed parts"
+        }
+      ],
+      "correctId": "original",
+      "feedback_en": "Keep the original strip as the whole.",
+      "explain_en": "Taking parts away does not make a new whole. We still compare with the full strip.",
+      "image": "visual/L3F04-3.svg",
+      "alt": "All 10 original spaces remain visible. 4 teal parts are uncrossed; 3 teal parts are crossed out. Below: 7/10 minus 3/10 equals 4/10."
+    },
+    "exampleItemId": "L3F04-I02"
+  },
+  {
+    "lessonId": "L4F01",
+    "age": 8,
+    "frames": [
+      {
+        "id": "L4F01-step1",
+        "title": "See the whole",
+        "caption": "All 42 counters make one whole. We want one of six equal groups.",
+        "alt": "One whole contains exactly 42 counters. The task is to find one sixth of this whole.",
+        "image": "visual/L4F01-1.svg"
+      },
+      {
+        "id": "L4F01-step2",
+        "title": "Make equal groups",
+        "caption": "Share all 42 equally. Each of the six groups has seven counters.",
+        "alt": "Six equal groups are arranged in two rows of three. Each group contains seven dots, making 42 counters altogether.",
+        "image": "visual/L4F01-2.svg"
+      },
+      {
+        "id": "L4F01-step3",
+        "title": "Take one and check",
+        "caption": "Division finds one group. Multiplication checks that six groups rebuild the whole.",
+        "alt": "One group of seven counters represents one sixth of 42. The equations are 42 divided by 6 equals 7, and 7 times 6 equals 42.",
+        "image": "visual/L4F01-3.svg"
+      }
+    ],
+    "try_it": {
+      "prompt": "For 1/4 of 28 counters, what does the 4 tell us?",
+      "options": [
+        {
+          "id": "equal_groups",
+          "label": "Make 4 equal groups"
+        },
+        {
+          "id": "group_size",
+          "label": "Put 4 in each group"
+        },
+        {
+          "id": "subtract",
+          "label": "Take away 4 counters"
+        }
+      ],
+      "correctId": "equal_groups",
+      "feedback_en": "The bottom number tells us how many equal groups make the whole.",
+      "explain_en": "Make 4 equal groups. Each has 7 counters; 7 × 4 checks the whole of 28.",
+      "image": "visual/L4F01-try.svg",
+      "alt": "A whole of 28 counters is represented by four equal sections. The size of one section is unknown."
+    },
+    "exampleItemId": "L5F01-E1"
+  },
+  {
+    "lessonId": "L4F02",
+    "age": 8,
+    "frames": [
+      {
+        "id": "L4F02-step1",
+        "title": "Label what is known",
+        "caption": "Seven centimetres labels one sixth, not the whole ribbon.",
+        "alt": "A ribbon is divided into six equal parts. Only its first part is labelled 7 cm. A bracket across all six parts asks for the whole.",
+        "image": "visual/L4F02-1.svg"
+      },
+      {
+        "id": "L4F02-step2",
+        "title": "Repeat the same length",
+        "caption": "Equal parts have equal lengths. Repeat seven centimetres six times.",
+        "alt": "All six equal sections are now labelled 7. Each section has the same length of 7 cm.",
+        "image": "visual/L4F02-2.svg"
+      },
+      {
+        "id": "L4F02-step3",
+        "title": "Build the whole and check",
+        "caption": "Multiply to rebuild the whole. Divide the whole to check one part.",
+        "alt": "Six sections of 7 cm make 42 cm. The calculation is 7 times 6 equals 42. Dividing 42 by 6 gives 7 again.",
+        "image": "visual/L4F02-3.svg"
+      }
+    ],
+    "try_it": {
+      "prompt": "1/5 of a ribbon is 9 cm. Which calculation rebuilds the whole?",
+      "options": [
+        {
+          "id": "multiply",
+          "label": "9 × 5"
+        },
+        {
+          "id": "divide",
+          "label": "9 ÷ 5"
+        },
+        {
+          "id": "add",
+          "label": "9 + 5"
+        }
+      ],
+      "correctId": "multiply",
+      "feedback_en": "The 9 cm is one equal part. The whole needs five copies of that length.",
+      "explain_en": "Five parts of 9 cm make 45 cm. Check: 45 ÷ 5 = 9 cm.",
+      "image": "visual/L4F02-try.svg",
+      "alt": "A ribbon has five equal parts. One part is labelled 9 cm. The whole length is unknown."
+    },
+    "exampleItemId": "L4F02-W1"
+  },
+  {
+    "lessonId": "L5F01",
+    "age": 8,
+    "frames": [
+      {
+        "id": "L5F01-step1",
+        "title": "Choose the parts",
+        "caption": "Thirty marbles make the whole. Three fifths means three of five equal parts.",
+        "alt": "The whole has 30 marbles. A bar is split into five equal parts, and the first three are highlighted as the parts wanted.",
+        "image": "visual/L5F01-1.svg"
+      },
+      {
+        "id": "L5F01-step2",
+        "title": "Find one part first",
+        "caption": "Divide the whole by five. Every equal part has six marbles.",
+        "alt": "Thirty marbles are divided into five equal parts. Each of the five sections is labelled 6. Thirty divided by five is six.",
+        "image": "visual/L5F01-2.svg"
+      },
+      {
+        "id": "L5F01-step3",
+        "title": "Combine and check",
+        "caption": "Three equal parts give eighteen. Rebuild the whole to check the result.",
+        "alt": "Three of five sections, each worth 6, are highlighted. Their total is 18 marbles. Checking 18 divided by 3, then multiplied by 5, returns 30.",
+        "image": "visual/L5F01-3.svg"
+      }
+    ],
+    "try_it": {
+      "prompt": "To find 3/8 of 40 counters, what should we find first?",
+      "options": [
+        {
+          "id": "one_part",
+          "label": "One eighth: 40 ÷ 8"
+        },
+        {
+          "id": "numerator",
+          "label": "One third: 40 ÷ 3"
+        },
+        {
+          "id": "bigger_whole",
+          "label": "A bigger whole: 40 × 8"
+        }
+      ],
+      "correctId": "one_part",
+      "feedback_en": "Eight equal parts make the whole. Find the size of one part before choosing three.",
+      "explain_en": "One eighth is 5. Three such parts make 15 counters.",
+      "image": "visual/L5F01-try.svg",
+      "alt": "A whole of 40 counters has eight equal sections. The first three sections are selected."
+    },
+    "exampleItemId": "L5F01-W1"
+  },
+  {
+    "lessonId": "L5F02",
+    "age": 8,
+    "frames": [
+      {
+        "id": "L5F02-step1",
+        "title": "Label the known parts",
+        "caption": "Eighteen centimetres covers three equal parts together. The whole has five parts.",
+        "alt": "A bar has five equal sections. A bracket labelled 18 cm covers exactly the first three sections. The whole length is unknown.",
+        "image": "visual/L5F02-1.svg"
+      },
+      {
+        "id": "L5F02-step2",
+        "title": "Split the known amount",
+        "caption": "Share eighteen centimetres across the three known parts. One part is six centimetres.",
+        "alt": "The same 18 cm bracket covers three equal parts, now each labelled 6. Dividing 18 by 3 finds one part of 6 cm.",
+        "image": "visual/L5F02-2.svg"
+      },
+      {
+        "id": "L5F02-step3",
+        "title": "Rebuild and check",
+        "caption": "Five parts rebuild the whole. Finding three fifths again checks the known eighteen centimetres.",
+        "alt": "All five equal sections are labelled 6. They make 30 cm. The check divides 30 by 5, then multiplies by 3, giving the original 18 cm.",
+        "image": "visual/L5F02-3.svg"
+      }
+    ],
+    "try_it": {
+      "prompt": "2/7 of a ribbon is 16 cm. Which calculation finds one part?",
+      "options": [
+        {
+          "id": "known_parts",
+          "label": "16 ÷ 2"
+        },
+        {
+          "id": "all_parts",
+          "label": "16 ÷ 7"
+        },
+        {
+          "id": "multiply_whole",
+          "label": "16 × 7"
+        }
+      ],
+      "correctId": "known_parts",
+      "feedback_en": "The 16 cm covers two parts together. Split that known amount into two equal lengths.",
+      "explain_en": "One part is 8 cm. All seven parts make 56 cm; that rebuilds the whole.",
+      "image": "visual/L5F02-try.svg",
+      "alt": "A ribbon has seven equal parts. A bracket over two parts is labelled 16 cm. One part is unknown."
+    },
+    "exampleItemId": "L5F02-W1"
+  }
+]
