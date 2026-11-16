@@ -13,6 +13,7 @@ export const KINDS = Object.freeze({
   fix: { title: 'Fixed the tricky ones', zh: '错题全改对' },
   paper: { title: 'Paper practice', zh: '纸上练习（家长发）' },
   parent: { title: 'From a grown-up', zh: '家长的鼓励' },
+  test: { title: 'Finished the weekend test', zh: '做完周末考试' },
 });
 const CHILDREN = ['A', 'B'];
 const empty = () => ({ version: 1, children: Object.fromEntries(CHILDREN.map(id => [id, { earned: [], goal: 10, redeemed: [] }])) });
@@ -71,6 +72,7 @@ function motif(kind, c) {
   if (kind === 'perfect') return star(50, 52, 30, LEMON) + star(74, 28, 9, '#fff');
   if (kind === 'fix') return blob(50, 52, 22, 22, 0, LEMON, INK, 14) + [0, 45, 90, 135, 180, 225, 270, 315].map(a => { const r = a * Math.PI / 180; return `<path d="M${50 + 30 * Math.cos(r)} ${52 + 30 * Math.sin(r)} L${50 + 40 * Math.cos(r)} ${52 + 40 * Math.sin(r)}" stroke="${CORAL}" stroke-width="4" stroke-linecap="round"/>`; }).join('');
   if (kind === 'paper') return `<g transform="rotate(-40 50 52)">${rect(38, 18, 24, 56, LEMON, INK)}${shape([[38, 74], [62, 74], [50, 90]], '#f1dcc0', INK)}${shape([[46, 84], [54, 84], [50, 90]], INK, INK)}${rect(38, 12, 24, 10, CORAL, INK)}</g>`;
+  if (kind === 'test') return shape([[38, 10], [50, 44], [62, 10]], CORAL, INK) + blob(50, 60, 24, 24, 0, LEMON, INK, 14) + star(50, 60, 14, '#fff');
   if (kind === 'parent') return [0, 72, 144, 216, 288].map(a => { const r = a * Math.PI / 180; return blob(50 + 20 * Math.cos(r), 50 + 20 * Math.sin(r), 13, 10, a, c, INK, 10); }).join('') + blob(50, 50, 11, 11, 0, LEMON, INK, 10);
   return `<path d="M50 88 C 50 70, 48 60, 50 40" stroke="${FERN}" stroke-width="5" stroke-linecap="round"/>` + blob(50, 42, 24, 30, 0, c === LEAF ? LEAF : c, INK, 18) + `<path d="M50 70 L50 30 M50 56 L38 46 M50 50 L62 40" stroke="${INK}" stroke-width="2.5" stroke-linecap="round" opacity=".6"/>`;
 }

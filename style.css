@@ -652,3 +652,37 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 1.5rem 0; }
 .mv-netface.clash{fill:rgba(243,165,148,.9)}
 .mv-edgehl{stroke:#d64a3a;stroke-width:4;stroke-linecap:round}
 .mv-cornerhl{fill:#d64a3a;stroke:#fff;stroke-width:1.5}
+/* Weekly homework and the weekend test */
+.week-card{margin:18px 0;padding:18px 20px;border:1px solid #f0d9a8;border-radius:16px;background:#fffaf0}
+.week-card>.progress-bar{display:block;margin:10px 0 0}
+.week-rows,.week-draft-list{list-style:none;margin:12px 0 0;padding:0;display:grid;gap:8px}
+.week-row,.week-draft-list li,.week-test{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:white}
+.week-row.done{background:#f2faf6;border-color:#cfe3dc}
+.week-day{flex:0 0 48px;height:32px;display:grid;place-items:center;border-radius:999px;background:var(--fern);color:white;font-weight:700;font-size:.9rem}
+.week-row.done .week-day{background:#7fb8a6}
+.week-text{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.week-text>strong{overflow-wrap:anywhere}
+.week-text small{color:var(--muted);font-size:.875rem}
+.week-row button,.week-test button,.week-draft-list button{flex-shrink:0;min-height:48px}
+.week-test{margin-top:8px;border-style:dashed}
+.week-test.open{border-style:solid;border-color:var(--fern);background:#f2faf6}
+.week-test.finished{border-style:solid}
+.week-scores{list-style:none;margin:10px 0;padding:0;display:grid;gap:8px}
+.week-scores li{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:white}
+.week-scores li.weak{border-color:#e9b3a6;background:#fff6f3}
+.week-scores .week-score-title{flex:1 1 160px;min-width:0;font-weight:650;overflow-wrap:anywhere}
+.week-scores .progress-bar{flex:0 1 120px}
+.week-scores-title{margin:18px 0 0;font-size:1.1rem}
+.week-block{margin:16px 0 0;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#fbfdfc}
+.week-block.draft{border-style:dashed;border-color:#c9b98f;background:#fffdf7}
+.week-block h3{margin:0}
+.week-table td{vertical-align:top}
+.week-table .week-actions{white-space:nowrap}
+.week-test-row td{background:#fffaf0}
+.week-picker{margin:12px 0}
+.week-picker summary,.week-history summary{cursor:pointer;font-weight:650;min-height:44px;display:flex;align-items:center}
+.week-history{margin-top:14px}
+@media (max-width:540px){.week-row,.week-test{flex-wrap:wrap}.week-row button,.week-test button{flex:1 1 100%}.week-table .week-actions{white-space:normal}}
+@media print{.week-card{display:none}}
+
+.week-table th:first-child,.week-table td:first-child{white-space:nowrap}
